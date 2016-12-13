@@ -1,6 +1,6 @@
 {
   "name": "ng2-weather-icons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "tsc && karma start",
@@ -9,8 +9,8 @@
     "tsc": "tsc",
     "typings": "typings",
     "htmlcopy": "copyfiles src/**/*.html dist",
-    "scsscopy": "copyfiles src/**/*.scss dist",
-    "dist": "rm -Rf dist && npm run tsc && npm run htmlcopy && npm run scsscopy"    
+    "csscopy": "copyfiles src/**/*.css dist",
+    "dist": "rm -Rf dist && npm run tsc && npm run htmlcopy && npm run csscopy"    
   },
   "repository": {
     "type": "git",
