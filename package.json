@@ -1,0 +1,52 @@
+{
+  "name": "ng2-weather-icons",
+  "version": "0.1.0",
+  "scripts": {
+    "lint": "tslint src/**/*.ts",
+    "test": "tsc && karma start",
+    "postinstall": "typings install",
+    "prepublish": "tsc",
+    "tsc": "tsc",
+    "typings": "typings",
+    "htmlcopy": "copyfiles src/**/*.html dist",
+    "scsscopy": "copyfiles src/**/*.scss dist",
+    "dist": "rm -Rf dist && npm run tsc && npm run htmlcopy && npm run scsscopy"    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptitdam2001/ng2-weather-icons.git"
+  },
+  "author": {
+    "name": "Damien Suhard",
+    "email": "ptitdam2001@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "icons",
+    "weather"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ptitdam2001/ng2-weather-icons.git/issues"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "dependencies": {
+    "weather-icons": "github:erikflowers/weather-icons"
+  },
+  "devDependencies": {
+    "@angular/core": "^2.0.0",
+    "@angular/common": "^2.0.0",
+    "codelyzer": "^0.0.28",
+    "rxjs": "5.0.0-beta.12",
+    "tslint": "^3.15.1",
+    "typescript": "2.0.2",
+    "typings": "^1.0.4",
+    "zone.js": "0.6.23",
+    "copyfiles": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
