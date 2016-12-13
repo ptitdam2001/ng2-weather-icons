@@ -1,6 +1,7 @@
 
 import { Component, Input, OnInit } from '@angular/core';
-import '../node_modules/weather-icons/css/weather-icons.css';
+
+import 'weather-icons/css/weather-icons.css';
 
 
 @Component({
