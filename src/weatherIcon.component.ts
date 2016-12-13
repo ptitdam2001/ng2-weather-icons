@@ -1,12 +1,12 @@
 
 import { Component, Input, OnInit } from '@angular/core';
+import '../node_modules/weather-icons/css/weather-icons.css';
+
 
 @Component({
   selector: 'ng2-wi',
   template: `<i [ngClass]="cClass"></i>`,
-  styleUrls: [
-    '../../node_modules/weather-icons/css/weather-icons.css'
-  ]
+  styleUrls: ['style.css']
 })
 export class WeatherIconComponent implements OnInit {
 
