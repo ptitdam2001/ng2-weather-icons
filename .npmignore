@@ -3,7 +3,7 @@ node_modules/*
 npm-debug.log
 
 example/
-src/
+
 
 # DO NOT IGNORE TYPESCRIPT FILES FOR NPM
 # TypeScript

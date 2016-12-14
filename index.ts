@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {WeatherIconComponent} from './dist/src/weatherIcon.component';
+import {WeatherIconComponent} from './src/weatherIcon.component';
 
-export * from './dist/src/weatherIcon.component'
+export * from './src/weatherIcon.component'
 
 @NgModule({
   imports: [
