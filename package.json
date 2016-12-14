@@ -10,7 +10,10 @@
     "typings": "typings",
     "htmlcopy": "copyfiles src/**/*.html dist",
     "csscopy": "copyfiles src/**/*.css dist",
-    "dist": "rm -Rf dist && npm run tsc && npm run htmlcopy && npm run csscopy"    
+    "scsscopy": "copyfiles src/**/*.scss dist",
+    "lesscopy": "copyfiles src/**/*.less dist",
+    "fontcopy": "copyfile src/font/* dist",
+    "dist": "rm -Rf dist && npm run tsc && npm run htmlcopy && npm run csscopy && npm run fontcopy && npm run lesscopy && npm run scsscopy"    
   },
   "repository": {
     "type": "git",

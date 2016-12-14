@@ -7,7 +7,10 @@ import 'weather-icons/css/weather-icons.css';
 @Component({
   selector: 'ng2-wi',
   template: `<i [ngClass]="cClass"></i>`,
-  styleUrls: ['style.css']
+  styleUrls: [
+    './css/weather-icons.min.css',
+    './css/weather-icons-wind.min.css'
+  ]
 })
 export class WeatherIconComponent implements OnInit {
 
