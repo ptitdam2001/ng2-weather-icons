@@ -13,7 +13,7 @@
     "scsscopy": "copyfiles src/**/*.scss dist",
     "lesscopy": "copyfiles src/**/*.less dist",
     "fontcopy": "copyfiles src/font/* dist",
-    "dist": "rm -Rf dist && npm run tsc && npm run htmlcopy && npm run csscopy && npm run fontcopy && npm run lesscopy && npm run scsscopy"    
+    "dist": "rm -Rf dist && npm run tsc && npm run htmlcopy && npm run csscopy && npm run fontcopy && npm run lesscopy && npm run scsscopy"
   },
   "repository": {
     "type": "git",
@@ -35,10 +35,14 @@
   },
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "weather-icons": "github:erikflowers/weather-icons"
   },
   "devDependencies": {
+    "@types/node": "^6.0.52",
     "@angular/core": "^2.0.0",
     "@angular/common": "^2.0.0",
     "codelyzer": "^0.0.28",
@@ -50,6 +54,6 @@
     "copyfiles": "^1.0.0"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   }
 }
