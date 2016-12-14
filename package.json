@@ -36,7 +36,8 @@
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "dependencies": {
     "weather-icons": "github:erikflowers/weather-icons"

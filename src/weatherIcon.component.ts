@@ -5,7 +5,7 @@ import './css/weather-icons.min.css';
 import './css/weather-icons-wind.min.css';
 
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'ng2-wi',
   template: `<i [ngClass]="cClass"></i>`,
   styleUrls: [
