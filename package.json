@@ -35,6 +35,9 @@
   },
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "weather-icons": "github:erikflowers/weather-icons"
   },
@@ -50,6 +53,6 @@
     "copyfiles": "^1.0.0"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   }
 }

@@ -1,8 +1,8 @@
 # Node
 node_modules/*
 npm-debug.log
-example
 
+example/
 src/
 
 # DO NOT IGNORE TYPESCRIPT FILES FOR NPM
