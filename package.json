@@ -1,6 +1,10 @@
 {
   "name": "ng2-weather-icons",
+<<<<<<< HEAD
   "version": "0.1.3",
+=======
+  "version": "0.1.4",
+>>>>>>> release/0.1.4
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "tsc && karma start",
@@ -40,12 +44,21 @@
     "src"
   ],
   "dependencies": {
+<<<<<<< HEAD
     "weather-icons": "github:erikflowers/weather-icons"
   },
   "devDependencies": {
     "@types/node": "^6.0.52",
     "@angular/core": "^2.0.0",
     "@angular/common": "^2.0.0",
+=======
+    "weather-icons": "github:erikflowers/weather-icons",
+    "@angular/common": "~2.0.0",
+    "@angular/core": "~2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.52",
+>>>>>>> release/0.1.4
     "codelyzer": "^0.0.28",
     "rxjs": "5.0.0-beta.12",
     "tslint": "^3.15.1",

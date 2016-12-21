@@ -1,9 +1,12 @@
 
 import { Component, Input, OnInit } from '@angular/core';
 
+<<<<<<< HEAD
 import './css/weather-icons.min.css';
 import './css/weather-icons-wind.min.css';
 
+=======
+>>>>>>> release/0.1.4
 @Component({
   // moduleId: module.id,
   selector: 'ng2-wi',
