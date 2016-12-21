@@ -194,6 +194,21 @@ Once your library is imported, you can use its components, directives and pipes 
 <ng2-wi>
   <i class="wi wi-night-windy"></i>
 </ng2-wi>
+
+<ng2-wi [name]="'windy'" [size]="'1'"></ng2-wi>
+
+<!-- rendered -->
+<ng2-wi>
+  <i class="wi wi-windy" style="font-size: 20px"></i>
+</ng2-wi>
+
+
+<ng2-wi [name]="'windy'" [size]="'2'"></ng2-wi>
+
+<!-- rendered -->
+<ng2-wi>
+  <i class="wi wi-windy" style="font-size: 40px"></i>
+</ng2-wi>
 ```
 
 Description
@@ -203,6 +218,7 @@ the \tag <ng2-wi\> takes below parameters:
 
 -	[name] which is a string without 'wi-' prefix [see at erik flowers website](https://erikflowers.github.io/weather-icons/)
 -	[mode] is an optional string parameters which can be 'day', 'night'. By default, it is a void string
+-	[size] it is the size of icon, it start at 1 (= 20px). Each size level is a multiple of 20
 
 Development
 -----------
@@ -222,7 +238,7 @@ $ npm run lint
 To do
 -----
 
--	[] Add attribute 'size' for having different icon's sizes
+-	\[*] Add attribute 'size' for having different icon's sizes
 
 License
 -------
