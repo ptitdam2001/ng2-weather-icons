@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# ng2-weather-icons
-
-## Installation
-=======
 ng2-weather-icons
 =================
 
@@ -10,7 +5,6 @@ Angular 2 Component for weather-icons by Erik Flowers.
 
 Installation
 ------------
->>>>>>> release/0.1.4
 
 To install this library, run:
 
@@ -18,9 +12,6 @@ To install this library, run:
 $ npm install ng2-weather-icons --save
 ```
 
-<<<<<<< HEAD
-## Consuming your library
-=======
 Or In package.json, insert following lines in the dependencies block:
 
 ```json
@@ -147,7 +138,6 @@ module.exports = function(defaults) {
 
 Consuming the library
 ---------------------
->>>>>>> release/0.1.4
 
 Once you have published your library to npm, you can import your library in any Angular application by running:
 
@@ -186,22 +176,6 @@ Once your library is imported, you can use its components, directives and pipes 
 <!-- You can now use your library component in app.component.html -->
 <ng2-wi [name]="'windy'"></ng2-wi>
 
-<<<<<<< HEAD
-<ng2-wi [name]="'windy'" [mode]="'day'"></ng2-wi>
-
-<ng2-wi [name]="'windy'" [mode]="'night'"></ng2-wi>
-
-```
-
-## Description
-
-the \tag <ng2-wi\> takes below parameters:
-
-- [name] which is a string without 'wi-' prefix [see at erik flowers website](https://erikflowers.github.io/weather-icons/)
-- [mode] is an optional string parameters which can be 'day', 'night'. By default, it is a void string
-
-## Development
-=======
 <!-- rendered -->
 <ng2-wi>
   <i class="wi wi-windy"></i>
@@ -232,7 +206,6 @@ the \tag <ng2-wi\> takes below parameters:
 
 Development
 -----------
->>>>>>> release/0.1.4
 
 To generate all `*.js`, `*.js.map` and `*.d.ts` files:
 
@@ -246,16 +219,6 @@ To lint all `*.ts` files:
 $ npm run lint
 ```
 
-<<<<<<< HEAD
-## To do
-
-- fix import of css into component
-- Add attribute 'size' for having different icon's sizes
-
-## License
-
-MIT © [Damien Suhard](ptitdam2001@gmail.com)
-=======
 To do
 -----
 
@@ -265,4 +228,3 @@ License
 -------
 
 MIT © [Damien Suhard](ptitdam2001@gmail.com) 2016
->>>>>>> release/0.1.4
