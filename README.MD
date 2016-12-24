@@ -1,6 +1,3 @@
-ng2-weather-icons
-=================
-
 Angular 2 Component for weather-icons by Erik Flowers.
 
 Installation
@@ -17,7 +14,7 @@ Or In package.json, insert following lines in the dependencies block:
 ```json
 "dependencies": {
   ...
-  "ng2-weather-icons": "~0.1.4",
+  "ng2-weather-icons": "~0.1.5",
   "weather-icons": "github:erikflowers/weather-icons"
 }
 ```
@@ -45,7 +42,7 @@ We can import this library using SystemJS (`systemjs.config.js`\):
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
       '@angular/upgrade': 'npm:@angular/upgrade/bundles/upgrade.umd.js',
 
-      'rxjs':                      'npm:rxjs',
+      'rxjs': 'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
 
       // Add this line (1/2)
@@ -154,7 +151,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { Ng2WeatherIconsModule } from 'ng2-weather-icons';
+import { default as Ng2WeatherIconsModule } from 'ng2-weather-icons';
 
 @NgModule({
   declarations: [
