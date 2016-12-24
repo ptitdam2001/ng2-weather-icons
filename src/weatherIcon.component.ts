@@ -7,8 +7,8 @@ const BASEICONSIZE = 20;
   // moduleId: module.id,
   selector: 'ng2-wi',
   template: `<i [ngClass]="cClass" [ngStyle]="cStyle"></i>`,
-  styleUrls: [
-  ]
+  styleUrls: [],
+  providers: [/*WeatherNameToIconPipe*/]
 })
 export class WeatherIconComponent implements OnInit {
 

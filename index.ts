@@ -16,6 +16,9 @@ export * from './src/weather-name-to-icon.pipe';
   ],
   exports: [
     WeatherIconComponent
+  ],
+  providers: [
+    WeatherNameToIconPipe
   ]
 })
 export default class Ng2WeatherIconsModule {}
