@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnChanges } from '@angular/core';
 import { WeatherNameToIconPipe } from './weather-name-to-icon.pipe';
 
 const BASEICONSIZE = 20;
@@ -10,7 +10,7 @@ const BASEICONSIZE = 20;
   styleUrls: [],
   providers: [/*WeatherNameToIconPipe*/]
 })
-export class WeatherIconComponent implements OnInit {
+export class WeatherIconComponent implements OnInit, OnChanges {
 
   private cClass: Array<string>;
   private cStyle: any;
@@ -22,8 +22,14 @@ export class WeatherIconComponent implements OnInit {
   constructor(private pipe: WeatherNameToIconPipe) {}
 
   ngOnInit() {
-    let code = (this.mode !== '' ? this.mode + '-' : '') + this.name;
-    this.cClass = ['wi', this.pipe.transform(code) ];
+  }
+
+  ngOnChanges(changes: any) {
+    if (changes.name.currentValue) {
+      let code = (this.mode !== '' ? this.mode + '-' : '') + this.name;
+      this.cClass = ['wi', this.pipe.transform(code) ];
+    }
+
     this.cStyle = { 'style': ( this.size > 0 ? (BASEICONSIZE * this.size) : BASEICONSIZE ) + 'px' };
   }
 }
