@@ -22,7 +22,7 @@ export class WeatherIconComponent implements OnInit {
   constructor(private pipe: WeatherNameToIconPipe) {}
 
   ngOnInit() {
-    let code = (this.mode !== '' ? '-' + this.mode : '') + '-' + this.name;
+    let code = (this.mode !== '' ? + this.mode + '-' : '') + this.name;
     this.cClass = ['wi', this.pipe.transform(code) ];
     this.cStyle = { 'style': ( this.size > 0 ? (BASEICONSIZE * this.size) : BASEICONSIZE ) + 'px' };
   }
