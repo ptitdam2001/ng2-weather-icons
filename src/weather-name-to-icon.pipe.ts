@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import findKey from 'lodash/findKey';
+import * as _ from 'lodash';
 
 export const OWMLIST: any = {
   'wi-owm-200': 'thunderstorm',
@@ -189,7 +189,7 @@ export class WeatherNameToIconPipe implements PipeTransform {
 
   transform(id: any, args?: any): any {
     let code: string = 'wi-owm-' + id;
-    let foundKey = findKey(OWMLIST, (o) => o === id);
+    let foundKey = _.findKey(OWMLIST, (o: any) => { return (o === id); });
 
     if (foundKey) {
       return foundKey;
