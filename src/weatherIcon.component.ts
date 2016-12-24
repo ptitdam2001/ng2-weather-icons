@@ -27,9 +27,13 @@ export class WeatherIconComponent implements OnInit, OnChanges {
   ngOnChanges(changes: any) {
     if (changes.name.currentValue) {
       let code = (this.mode !== '' ? this.mode + '-' : '') + this.name;
-      this.cClass = ['wi', this.pipe.transform(code) ];
+      code =  this.pipe.transform(code);
+
+      if (code) {
+        this.cClass = ['wi', code];
+      }
     }
 
-    this.cStyle = { 'style': ( this.size > 0 ? (BASEICONSIZE * this.size) : BASEICONSIZE ) + 'px' };
+    this.cStyle = { 'font-size': ( this.size > 0 ? (BASEICONSIZE * this.size) : BASEICONSIZE ) + 'px' };
   }
 }
