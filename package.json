@@ -40,21 +40,22 @@
     "src"
   ],
   "dependencies": {
-    "@angular/common": "~2.0.0",
-    "@angular/core": "~2.0.0",
+    "@angular/common": "^2.0.0",
+    "@angular/core": "^2.0.0",
     "lodash": "^4.17.2",
     "weather-icons": "github:erikflowers/weather-icons"
   },
   "devDependencies": {
-    "@types/node": "^6.0.52",
-    "@types/lodash": "^4.14.44",
+    "@types/jasmine": "^2.5.46",
+    "@types/lodash": "^4.14.57",
+    "@types/node": "^6.0.66",
     "codelyzer": "^0.0.28",
-    "rxjs": "5.0.0-beta.12",
+    "copyfiles": "^1.0.0",
+    "rxjs": "^5.2.0",
     "tslint": "^3.15.1",
-    "typescript": "2.0.2",
+    "typescript": "^2.2.0",
     "typings": "^1.0.4",
-    "zone.js": "0.6.23",
-    "copyfiles": "^1.0.0"
+    "zone.js": "^0.8.4"
   },
   "engines": {
     "node": ">=0.10.0"
