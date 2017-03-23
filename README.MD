@@ -14,7 +14,7 @@ Or In package.json, insert following lines in the dependencies block:
 ```json
 "dependencies": {
   ...
-  "ng2-weather-icons": "~0.1.5",
+  "ng2-weather-icons": "~0.1.9",
   "weather-icons": "github:erikflowers/weather-icons"
 }
 ```
@@ -71,7 +71,7 @@ We can import this library using SystemJS (`systemjs.config.js`\):
 
 ### [Angular CLI](https://github.com/angular/angular-cli)
 
-1.	add `../node_modules/weather-icons/css/weather-icons.css` and `../node_modules/weather-icons/css/weather-icons-winds.css` to **style** block of *angular-cli.json*.
+1.	add `../node_modules/weather-icons/css/weather-icons.css` and `../node_modules/weather-icons/css/weather-icons-wind.css` to **style** block of *angular-cli.json*.
 
 2.	add `../node_modules/weather-icons/fonts/*.+(otf|eot|svg|ttf|woff|woff2)` to **addons** block of *angular-cli.json*.
 
@@ -82,7 +82,7 @@ We can import this library using SystemJS (`systemjs.config.js`\):
     {
       "styles": [
         "../node_modules/weather-icons/css/weather-icons.css"
-        "../node_modules/weather-icons/css/weather-icons-winds.css"
+        "../node_modules/weather-icons/css/weather-icons-wind.css"
       ]
     }
   ],
