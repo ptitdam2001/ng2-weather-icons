@@ -247,7 +247,7 @@
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
         <pre class="line-numbers"><code class="language-typescript">import { Pipe, PipeTransform } from &#x27;@angular/core&#x27;;
-import * as _ from &#x27;lodash&#x27;;
+import findKey from &#x27;lodash.findkey&#x27;;
 
 export const OWMLIST: any &#x3D; {
   &#x27;wi-owm-200&#x27;: &#x27;thunderstorm&#x27;,
@@ -437,7 +437,7 @@ export class WeatherNameToIconPipe implements PipeTransform {
 
   transform(id: any, args?: any): any {
     let code: string &#x3D; &#x27;wi-owm-&#x27; + id;
-    let foundKey &#x3D; _.findKey(OWMLIST, (o: any) &#x3D;&gt; { return (o &#x3D;&#x3D;&#x3D; id); });
+    let foundKey &#x3D; findKey(OWMLIST, (o: any) &#x3D;&gt; { return (o &#x3D;&#x3D;&#x3D; id); });
 
     if (foundKey) {
       return foundKey;
