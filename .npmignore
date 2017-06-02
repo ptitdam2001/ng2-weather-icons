@@ -1,10 +1,7 @@
 # Node
 node_modules/*
 npm-debug.log
-
-example/
-
-
+docs/*
 # DO NOT IGNORE TYPESCRIPT FILES FOR NPM
 # TypeScript
 # *.js
@@ -18,6 +15,9 @@ example/
 .idea/*
 *.iml
 
+# VS Code
+.vscode/*
+
 # Windows
 Thumbs.db
 Desktop.ini
@@ -25,3 +25,10 @@ Desktop.ini
 # Mac
 .DS_Store
 **/.DS_Store
+
+# Ngc generated files
+**/*.ngfactory.ts
+
+# Library files
+src/*
+build/*

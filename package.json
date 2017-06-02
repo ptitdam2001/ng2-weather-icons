@@ -1,63 +1,68 @@
 {
   "name": "ng2-weather-icons",
-  "version": "0.1.16",
+  "version": "0.1.0",
   "scripts": {
-    "lint": "tslint src/**/*.ts",
-    "test": "tsc && karma start",
-    "postinstall": "typings install",
-    "prepublish": "tsc",
-    "tsc": "tsc",
-    "typings": "typings",
-    "htmlcopy": "copyfiles src/**/*.html dist",
-    "csscopy": "copyfiles src/**/*.css dist",
-    "scsscopy": "copyfiles src/**/*.scss dist",
-    "lesscopy": "copyfiles src/**/*.less dist",
-    "fontcopy": "copyfiles src/font/* dist",
-    "dist": "rm -Rf dist && npm run tsc && npm run htmlcopy && npm run csscopy && npm run fontcopy && npm run lesscopy && npm run scsscopy"
+    "build": "gulp build",
+    "build:watch": "gulp",
+    "docs": "npm run docs:build",
+    "docs:build": "compodoc -p tsconfig.json -n ng2-weather-icons -d docs --hideGenerator",
+    "docs:serve": "npm run docs:build -- -s -r 8900",
+    "docs:watch": "npm run docs:build -- -s -w -r 8900",
+    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
+    "test": "tsc && karma start"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ptitdam2001/ng2-weather-icons.git"
+    "url": "https://github.com/ptitdam2001/ng2-weather-icons"
   },
   "author": {
     "name": "Damien Suhard",
     "email": "ptitdam2001@gmail.com"
   },
   "keywords": [
-    "angular",
-    "angular2",
-    "icons",
-    "weather"
+    "angular"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ptitdam2001/ng2-weather-icons.git/issues"
-  },
-  "main": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "dependencies": {
-    "@angular/common": "^2.0.0",
-    "@angular/core": "^2.0.0",
-    "lodash": "^4.17.2",
-    "weather-icons": "github:erikflowers/weather-icons"
+    "url": "https://github.com/ptitdam2001/ng2-weather-icons/issues"
   },
   "devDependencies": {
-    "@types/jasmine": "^2.5.46",
-    "@types/lodash": "^4.14.57",
-    "@types/node": "^6.0.66",
-    "codelyzer": "^0.0.28",
-    "copyfiles": "^1.0.0",
-    "rxjs": "^5.2.0",
-    "tslint": "^3.15.1",
-    "typescript": "^2.2.0",
-    "typings": "^1.0.4",
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@compodoc/compodoc": "^1.0.0-beta.7",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "~6.0.60",
+    "codelyzer": "~2.0.0",
+    "core-js": "^2.4.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rollup": "^2.11.0",
+    "jasmine-core": "~2.5.2",
+    "jasmine-spec-reporter": "~3.2.0",
+    "karma": "~1.4.1",
+    "karma-chrome-launcher": "~2.0.0",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^0.2.0",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "node-sass": "^4.5.2",
+    "node-sass-tilde-importer": "^1.0.0",
+    "node-watch": "^0.5.2",
+    "protractor": "~5.1.0",
+    "rollup": "^0.41.6",
+    "run-sequence": "^1.2.2",
+    "rxjs": "^5.1.0",
+    "ts-node": "~2.0.0",
+    "tslint": "~4.5.0",
+    "typescript": "~2.2.0",
     "zone.js": "^0.8.4"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=6.0.0"
   }
 }

@@ -16,8 +16,8 @@ export class WeatherIconComponent implements OnInit, OnChanges {
   private cStyle: any;
 
   @Input() name: string;
-  @Input() size ?: number = 1;
-  @Input() mode ?: string = '';
+  @Input() size ?= 1;
+  @Input() mode ?= '';
 
   constructor(private pipe: WeatherNameToIconPipe) {}
 
