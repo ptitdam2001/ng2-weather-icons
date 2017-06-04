@@ -247,7 +247,7 @@ var WeatherIconComponent = (function () {
 WeatherIconComponent.decorators = [
     { type: Component, args: [{
                 selector: 'ng2-wi',
-                template: '<i [ngClass]="cClass" [ngStyle]="cStyle"></i>'
+                template: "<i [ngClass]=\"cClass\" [ngStyle]=\"cStyle\"></i>"
             },] },
 ];
 /**

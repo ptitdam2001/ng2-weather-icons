@@ -5,7 +5,7 @@ const BASEICONSIZE = 20;
 
 @Component({
   selector: 'ng2-wi',
-  template: '<i [ngClass]="cClass" [ngStyle]="cStyle"></i>'
+  template: `<i [ngClass]="cClass" [ngStyle]="cStyle"></i>`
 })
 export class WeatherIconComponent implements OnInit, OnChanges {
 
