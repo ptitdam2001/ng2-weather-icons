@@ -69,6 +69,6 @@
     "lodash.findkey": "^4.6.0",
     "weather-icons": "github:erikflowers/weather-icons"
   },
-  "module": "dist/ng2-weather-icons.js",
-  "typings": "dist/ng2-weather-icons.d.ts"
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts"
 }
