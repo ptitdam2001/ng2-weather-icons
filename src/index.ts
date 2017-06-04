@@ -1,4 +1,4 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
+import { NgModule, ModuleWithProviders, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WeatherIconComponent } from './weatherIcon.component';
 import { WeatherNameToIconPipe } from './weather-name-to-icon.pipe';
@@ -17,7 +17,8 @@ export * from './weather-name-to-icon.pipe';
   exports: [
     WeatherIconComponent,
     WeatherNameToIconPipe
-  ]
+  ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA ]
 })
 export class Ng2WeatherIconsModule {
   static forRoot(): ModuleWithProviders {

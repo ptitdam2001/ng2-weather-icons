@@ -4,11 +4,8 @@ import { WeatherNameToIconPipe } from './weather-name-to-icon.pipe';
 const BASEICONSIZE = 20;
 
 @Component({
-  // moduleId: module.id,
   selector: 'ng2-wi',
-  template: `<i [ngClass]="cClass" [ngStyle]="cStyle"></i>`,
-  styleUrls: [],
-  providers: [/*WeatherNameToIconPipe*/]
+  template: '<i [ngClass]="cClass" [ngStyle]="cStyle"></i>'
 })
 export class WeatherIconComponent implements OnInit, OnChanges {
 
