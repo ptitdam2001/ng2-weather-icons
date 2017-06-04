@@ -250,10 +250,8 @@ var WeatherIconComponent = (function () {
 }());
 WeatherIconComponent.decorators = [
     { type: _angular_core.Component, args: [{
-                //selector: 'ng2-wi',
-                template: "<i [ngClass]=\"cClass\" [ngStyle]=\"cStyle\"></i>",
-                styles: [],
-                providers: []
+                selector: 'ng2-wi',
+                template: '<i [ngClass]="cClass" [ngStyle]="cStyle"></i>'
             },] },
 ];
 /**
@@ -294,7 +292,8 @@ Ng2WeatherIconsModule.decorators = [
                 exports: [
                     WeatherIconComponent,
                     WeatherNameToIconPipe
-                ]
+                ],
+                schemas: [_angular_core.CUSTOM_ELEMENTS_SCHEMA, _angular_core.NO_ERRORS_SCHEMA]
             },] },
 ];
 /**

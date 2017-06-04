@@ -1,4 +1,4 @@
-import { Component, Input, NgModule, Pipe } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, Input, NO_ERRORS_SCHEMA, NgModule, Pipe } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import findKey from 'lodash.findkey';
 
@@ -246,10 +246,8 @@ var WeatherIconComponent = (function () {
 }());
 WeatherIconComponent.decorators = [
     { type: Component, args: [{
-                //selector: 'ng2-wi',
-                template: "<i [ngClass]=\"cClass\" [ngStyle]=\"cStyle\"></i>",
-                styles: [],
-                providers: []
+                selector: 'ng2-wi',
+                template: '<i [ngClass]="cClass" [ngStyle]="cStyle"></i>'
             },] },
 ];
 /**
@@ -290,7 +288,8 @@ Ng2WeatherIconsModule.decorators = [
                 exports: [
                     WeatherIconComponent,
                     WeatherNameToIconPipe
-                ]
+                ],
+                schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
             },] },
 ];
 /**
