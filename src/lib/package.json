@@ -1,0 +1,35 @@
+{
+  "name": "ng2-weather-icons",
+  "version": "0.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ptitdam2001/ng2-weather-icons"
+  },
+  "author": {
+    "name": "Damien Suhard",
+    "email": "ptitdam2001@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "icons",
+    "weather"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ptitdam2001/ng2-weather-icons/issues"
+  },
+  "main": "./bundles/ng2-weather-icons.umd.js",
+  "es2015": "./esm2015/ng2-weather-icons.js",
+  "module": "./esm5/ng2-weather-icons.es5.js",
+  "typings": "./ng2-weather-icons.d.ts",
+  "dependencies": {
+    "lodash.findkey": "^4.17.4",
+    "weathericons": "^2.1.0"
+  },
+  "peerDependencies": {
+    "@angular/core": "^5.0.0",
+    "@angular/common": "^5.0.0",
+    "@angular/http": "^5.0.0"
+  }
+}
