@@ -24,12 +24,12 @@
   "module": "./esm5/ng2-weather-icons.es5.js",
   "typings": "./ng2-weather-icons.d.ts",
   "dependencies": {
-    "lodash.findkey": "^4.17.4",
+    "@types/lodash": "^4.14.106",
     "weathericons": "^2.1.0"
   },
   "peerDependencies": {
-    "@angular/core": "^5.0.0",
     "@angular/common": "^5.0.0",
+    "@angular/core": "^5.0.0",
     "@angular/http": "^5.0.0"
   }
 }

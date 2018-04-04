@@ -8,8 +8,8 @@ const BASEICONSIZE = 20;
   template: `<i [ngClass]="cClass" [ngStyle]="cStyle"></i>`,
   providers: [WeatherNameToIconPipe],
   styleUrls: [
-    '../node_modules/weathericons/sass/weather-icons.scss',
-    '../node_modules/weathericons/sass/weather-icons-wind.scss'
+    '../node_modules/weathericons/css/weather-icons.min.css',
+    '../node_modules/weathericons/css/weather-icons-wind.min.css'
   ]
 })
 export class WeatherIconComponent implements OnInit, OnChanges {
@@ -28,13 +28,10 @@ export class WeatherIconComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: any) {
     if (changes.name.currentValue) {
+      const nameNumber = Number(this.name) || 0;
       let code = (this.mode !== '' ? this.mode + '-' : '') + this.name;
-      console.log('_______', code);
-      code =  this.pipe.transform(code);
-
-      if (code) {
-        this.cClass = ['wi', code];
-      }
+      code = nameNumber > 0 ? this.pipe.transform(code) : 'wi-' + code;
+      this.cClass = ['wi', code];
     }
 
     this.cStyle = { 'font-size': ( this.size > 0 ? (BASEICONSIZE * this.size) : BASEICONSIZE ) + 'px' };
