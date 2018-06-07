@@ -30,6 +30,8 @@
   "peerDependencies": {
     "@angular/common": "^5.0.0",
     "@angular/core": "^5.0.0",
-    "@angular/http": "^5.0.0"
+    "@angular/http": "^5.0.0",
+    "@angular/animations": "^5.0.0",
+    "core-js": "^2.5.4"
   }
 }

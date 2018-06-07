@@ -46,3 +46,4 @@ testem.log
 Thumbs.db
 
 build
+.ng_pkg_build

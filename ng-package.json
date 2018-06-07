@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "lib": {
+    "entryFile": "./src/lib/public_api.ts",
+    "externals": {
+      "lodash": "lodash",
+      "weathericons": "weathericons"
+    },
+    "styleIncludePaths": [
+      "./node_modules/weathericons/css/weather-icons.min.css",
+      "./node_modules/weathericons/css/weather-icons-wind.min.css"
+    ]
+  },
+  "whitelistedNonPeerDependencies": ["angular", "core-js", "rxjs", "zone.js"]
+}
