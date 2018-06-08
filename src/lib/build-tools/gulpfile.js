@@ -71,7 +71,7 @@ gulp.task('copy:src', ['clean'], function() {
     .pipe(gulp.dest(buildDir));
 });
 
-gulp.task('copy:package-version', ['copy:src'], function() {
+gulp.task('copy:package-version', ['copy:src', 'copy:readme'], function() {
   const LIB_VERSION = require('../package.json').version;
 
   //update version on package.json on build folder
@@ -83,6 +83,13 @@ gulp.task('copy:package-version', ['copy:src'], function() {
         `"version": "${LIB_VERSION}"`
       )
     )
+    .pipe(gulp.dest(buildDir));
+});
+
+gulp.task('copy:readme', function () {
+  console.log('___', path.join(libDir, '/README.MD'));
+  return gulp
+    .src(path.join(libDir, '/README.MD'))
     .pipe(gulp.dest(buildDir));
 });
 
