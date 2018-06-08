@@ -1,63 +1,69 @@
 {
   "name": "ng2-weather-icons",
-  "version": "0.1.16",
-  "scripts": {
-    "lint": "tslint src/**/*.ts",
-    "test": "tsc && karma start",
-    "postinstall": "typings install",
-    "prepublish": "tsc",
-    "tsc": "tsc",
-    "typings": "typings",
-    "htmlcopy": "copyfiles src/**/*.html dist",
-    "csscopy": "copyfiles src/**/*.css dist",
-    "scsscopy": "copyfiles src/**/*.scss dist",
-    "lesscopy": "copyfiles src/**/*.less dist",
-    "fontcopy": "copyfiles src/font/* dist",
-    "dist": "rm -Rf dist && npm run tsc && npm run htmlcopy && npm run csscopy && npm run fontcopy && npm run lesscopy && npm run scsscopy"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ptitdam2001/ng2-weather-icons.git"
-  },
-  "author": {
-    "name": "Damien Suhard",
-    "email": "ptitdam2001@gmail.com"
-  },
-  "keywords": [
-    "angular",
-    "angular2",
-    "icons",
-    "weather"
-  ],
+  "version": "0.2.1",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ptitdam2001/ng2-weather-icons.git/issues"
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "build:lib": "gulp --gulpfile gulpfile.lib.js",
+    "version": "sync-json -v --property version --source package.json src/lib/package.json",
+    "packagr": "ng-packagr -p ng-package.json"
   },
-  "main": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
+  "private": false,
   "dependencies": {
-    "@angular/common": "^2.0.0",
-    "@angular/core": "^2.0.0",
-    "lodash": "^4.17.2",
-    "weather-icons": "github:erikflowers/weather-icons"
+    "@angular/animations": "^5.2.0",
+    "@angular/common": "^5.2.0",
+    "@angular/compiler": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "@angular/forms": "^5.2.0",
+    "@angular/http": "^5.2.0",
+    "@angular/platform-browser": "^5.2.0",
+    "@angular/platform-browser-dynamic": "^5.2.0",
+    "@angular/router": "^5.2.0",
+    "core-js": "^2.5.4",
+    "rxjs": "^5.5.8",
+    "zone.js": "^0.8.24"
   },
   "devDependencies": {
-    "@types/jasmine": "^2.5.46",
-    "@types/lodash": "^4.14.57",
-    "@types/node": "^6.0.66",
-    "codelyzer": "^0.0.28",
-    "copyfiles": "^1.0.0",
-    "rxjs": "^5.2.0",
-    "tslint": "^3.15.1",
-    "typescript": "^2.2.0",
-    "typings": "^1.0.4",
-    "zone.js": "^0.8.4"
-  },
-  "engines": {
-    "node": ">=0.10.0"
+    "@angular/cli": "~1.7.3",
+    "@angular/compiler-cli": "^5.2.0",
+    "@angular/language-service": "^5.2.0",
+    "@types/jasmine": "~2.8.3",
+    "@types/jasminewd2": "~2.0.2",
+    "@types/lodash": "^4.14.106",
+    "@types/node": "~9.6.2",
+    "codelyzer": "^4.0.1",
+    "del": "^3.0.0",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.2.1",
+    "jasmine-core": "~3.1.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~2.0.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "^1.2.1",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^1.0.0",
+    "ng-packagr": "^2.4.2",
+    "path": "^0.12.7",
+    "protractor": "~5.3.0",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.57.1",
+    "run-sequence": "^2.2.1",
+    "sorcery": "^0.10.0",
+    "sync-json": "^1.0.2",
+    "through2": "^2.0.3",
+    "ts-node": "~5.0.1",
+    "tslint": "~5.9.1",
+    "typescript": "~2.8.1"
   }
 }
