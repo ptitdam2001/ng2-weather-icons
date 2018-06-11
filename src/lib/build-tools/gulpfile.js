@@ -87,7 +87,6 @@ gulp.task('copy:package-version', ['copy:src', 'copy:readme'], function() {
 });
 
 gulp.task('copy:readme', function () {
-  console.log('___', path.join(libDir, '/README.MD'));
   return gulp
     .src(path.join(libDir, '/README.MD'))
     .pipe(gulp.dest(buildDir));
