@@ -14,8 +14,8 @@ const BASEICONSIZE = 20;
 })
 export class WeatherIconComponent implements OnInit, OnChanges {
 
-  private cClass: Array<string> = [];
-  private cStyle: any;
+  cClass: Array<string> = [];
+  cStyle: any;
 
   @Input() name: string;
   @Input() size ?= 1;
